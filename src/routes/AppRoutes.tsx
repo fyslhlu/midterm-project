@@ -5,6 +5,7 @@ import DashboardLayout from "../layouts/DashboardLayout";
 
 import Login from "../pages/Login";
 import Signup from "../pages/Signup";
+import Dashboard from "../pages/Dashboard";
 
 function AppRoutes() {
   return (
@@ -17,7 +18,7 @@ function AppRoutes() {
       </Route>
 
       <Route element={<DashboardLayout />}>
-        <Route path="/dashboard" element={<div>Dashboard Page</div>} />
+       <Route path="/dashboard" element={<Dashboard />} />
       </Route>
 
       <Route path="*" element={<Navigate to="/login" />} />
