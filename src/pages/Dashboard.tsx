@@ -63,31 +63,33 @@ function Dashboard() {
   return (
     <div className="flex flex-col gap-6">
       <div>
-        <h1 className="text-3xl font-bold text-gray-800">Dashboard</h1>
-        <p className="text-gray-500">
+        <h1 className="text-3xl font-bold text-text-main">Dashboard</h1>
+        <p className="text-text-muted">
           Welcome to the admin dashboard. This table is powered by AG Grid.
         </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div className="bg-white rounded-xl shadow p-5">
-          <h3 className="text-gray-500">Total Users</h3>
-          <p className="text-3xl font-bold text-blue-600">4</p>
+        <div className="bg-card rounded-app shadow p-5">
+          <h3 className="text-text-muted">Total Users</h3>
+          <p className="text-3xl font-bold text-primary">4</p>
         </div>
 
-        <div className="bg-white rounded-xl shadow p-5">
-          <h3 className="text-gray-500">Active Users</h3>
-          <p className="text-3xl font-bold text-green-600">2</p>
+        <div className="bg-card rounded-app shadow p-5">
+          <h3 className="text-text-muted">Active Users</h3>
+          <p className="text-3xl font-bold text-success">2</p>
         </div>
 
-        <div className="bg-white rounded-xl shadow p-5">
-          <h3 className="text-gray-500">Pending Users</h3>
-          <p className="text-3xl font-bold text-yellow-600">1</p>
+        <div className="bg-card rounded-app shadow p-5">
+          <h3 className="text-text-muted">Pending Users</h3>
+          <p className="text-3xl font-bold text-warning">1</p>
         </div>
       </div>
 
-      <div className="bg-white rounded-xl shadow p-4">
-        <h2 className="text-xl font-semibold mb-4">Users Table</h2>
+      <div className="bg-card rounded-app shadow p-4">
+        <h2 className="text-xl font-semibold mb-4 text-text-main">
+          Users Table
+        </h2>
 
         <div style={{ height: 400, width: "100%" }}>
           <AgGridReact

@@ -4,8 +4,8 @@ function Signup() {
   return (
     <div className="flex flex-col gap-4">
       <div className="text-center mb-2">
-        <h2 className="text-3xl font-bold text-slate-900">Create Account</h2>
-        <p className="text-slate-500 mt-1">Sign up to get started</p>
+        <h2 className="text-3xl font-bold text-text-main">Create Account</h2>
+        <p className="text-text-muted mt-1">Sign up to get started</p>
       </div>
 
       <TextField label="Full Name" fullWidth />

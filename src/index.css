@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+@theme {
+  --color-primary: #2563eb;
+  --color-primary-dark: #1e40af;
+  --color-secondary: #14b8a6;
+
+  --color-app-bg: #f8fafc;
+  --color-sidebar: #0f172a;
+  --color-card: #ffffff;
+
+  --color-text-main: #0f172a;
+  --color-text-muted: #64748b;
+
+  --color-success: #16a34a;
+  --color-warning: #eab308;
+  --color-error: #dc2626;
+
+  --radius-app: 1rem;
+}

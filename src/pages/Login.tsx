@@ -11,7 +11,7 @@ import {
   CircularProgress,
 } from "@mui/material";
 
-import { showSuccessToast } from "../services/toastService";
+import { showSuccessToast } from "@/services/toastService";
 
 function Login() {
   const [openDialog, setOpenDialog] = useState(false);
@@ -41,9 +41,11 @@ function Login() {
   return (
     <div className="flex flex-col gap-4">
       <div className="text-center mb-2">
-  <h2 className="text-3xl font-bold text-slate-900">Welcome Back</h2>
-  <p className="text-slate-500 mt-1">Login to access your dashboard</p>
-</div>
+        <h2 className="text-3xl font-bold text-text-main">Welcome Back</h2>
+        <p className="text-text-muted mt-1">
+          Login to access your dashboard
+        </p>
+      </div>
 
       <TextField label="Email" fullWidth />
       <TextField label="Password" type="password" fullWidth />

@@ -13,13 +13,13 @@ function DashboardLayout() {
   const linkClass = ({ isActive }: { isActive: boolean }) =>
     `px-4 py-2 rounded-lg font-medium transition ${
       isActive
-        ? "bg-blue-600 text-white"
-        : "text-slate-300 hover:bg-slate-800 hover:text-white"
+        ? "bg-primary text-white"
+        : "text-slate-300 hover:bg-primary-dark hover:text-white"
     }`;
 
   return (
-    <div className="min-h-screen flex bg-slate-100">
-      <aside className="w-64 bg-slate-900 text-white p-6 hidden md:flex md:flex-col">
+    <div className="min-h-screen flex bg-app-bg">
+      <aside className="w-64 bg-sidebar text-white p-6 hidden md:flex md:flex-col">
         <h2 className="text-2xl font-bold mb-8">Midterm App</h2>
 
         <nav className="flex flex-col gap-3 flex-1">
