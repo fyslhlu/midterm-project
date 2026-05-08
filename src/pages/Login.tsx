@@ -40,7 +40,10 @@ function Login() {
 
   return (
     <div className="flex flex-col gap-4">
-      <h2 className="text-2xl font-bold text-center">Login</h2>
+      <div className="text-center mb-2">
+  <h2 className="text-3xl font-bold text-slate-900">Welcome Back</h2>
+  <p className="text-slate-500 mt-1">Login to access your dashboard</p>
+</div>
 
       <TextField label="Email" fullWidth />
       <TextField label="Password" type="password" fullWidth />

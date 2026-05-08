@@ -4,6 +4,11 @@ This is a React + TypeScript web project built for the web development midterm.
 The project focuses on clean React architecture, routing, layouts, authentication UI flow, reusable services, Material UI theme integration, Tailwind CSS styling, and AG Grid dashboard integration.
 
 ---
+## ChatGPT Assistance Link
+
+This project was developed with guidance from the following ChatGPT conversation:
+
+[ChatGPT Project Assistance Chat]https://chatgpt.com/c/69fd7d5e-68b4-83eb-bb05-afa443df25f7
 
 ## Technologies Used
 
@@ -81,4 +86,4 @@ The login page includes:
 React Hot Toast was integrated using a reusable service file:
 
 ```ts
-src/services/toastService.ts
+src/services/toastService.ts  

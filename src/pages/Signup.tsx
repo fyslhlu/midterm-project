@@ -3,8 +3,12 @@ import { TextField, Button } from "@mui/material";
 function Signup() {
   return (
     <div className="flex flex-col gap-4">
-      <h2 className="text-2xl font-bold text-center">Signup</h2>
+      <div className="text-center mb-2">
+        <h2 className="text-3xl font-bold text-slate-900">Create Account</h2>
+        <p className="text-slate-500 mt-1">Sign up to get started</p>
+      </div>
 
+      <TextField label="Full Name" fullWidth />
       <TextField label="Email" fullWidth />
       <TextField label="Password" type="password" fullWidth />
 
