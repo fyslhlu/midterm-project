@@ -11,6 +11,8 @@ import {
   CircularProgress,
 } from "@mui/material";
 
+import { showSuccessToast } from "../services/toastService";
+
 function Login() {
   const [openDialog, setOpenDialog] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -31,6 +33,7 @@ function Login() {
 
     setTimeout(() => {
       setLoading(false);
+      showSuccessToast("Login successful!");
       navigate("/dashboard");
     }, 3000);
   };
