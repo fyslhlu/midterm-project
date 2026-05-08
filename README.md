@@ -1,73 +1,84 @@
-# React + TypeScript + Vite
+# Midterm Web Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React + TypeScript web project built for the web development midterm.  
+The project focuses on clean React architecture, routing, layouts, authentication UI flow, reusable services, Material UI theme integration, Tailwind CSS styling, and AG Grid dashboard integration.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Technologies Used
 
-## React Compiler
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Material UI
+- React Router DOM
+- React Hot Toast
+- AG Grid
+- Git & GitHub
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Project Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 1. React + Vite Setup
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+The project was created using Vite with React and TypeScript.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 2. GitHub Repository
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+The project was connected to a GitHub repository and pushed using Git.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 3. Branching Workflow
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+The project uses two main branches:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- `main`: stable branch
+- `auth`: feature branch used for authentication and project development
+
+The `auth` branch will be merged into `main` after completing the required features.
+
+### 4. Tailwind CSS Setup
+
+Tailwind CSS was configured with Vite and used for layout and utility styling.
+
+### 5. Material UI Theme
+
+Material UI was integrated with a custom global theme to keep the design consistent.
+
+### 6. Layout System
+
+The project includes two layouts:
+
+- `AuthLayout`: used for login and signup pages
+- `DashboardLayout`: used for the dashboard page
+
+### 7. Routing System
+
+Routing is handled inside the React app using React Router DOM.
+
+Available routes:
+
+- `/` redirects to `/login`
+- `/login` displays the login page
+- `/signup` displays the signup page
+- `/dashboard` displays the dashboard page
+
+### 8. Login Flow
+
+The login page includes:
+
+- email input
+- password input
+- login button
+- confirmation dialog
+- Yes / No options
+- loading spinner for 3 seconds
+- navigation to dashboard after successful login
+
+### 9. Toast Service
+
+React Hot Toast was integrated using a reusable service file:
+
+```ts
+src/services/toastService.ts
